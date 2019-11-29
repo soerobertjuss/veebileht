@@ -6,6 +6,16 @@
 	padding: 0px;
 	margin: 0px;
 }
+
+.menüü {
+	color: black;
+	font-size: 60px;
+	font-family: "Brush Script MT";
+	text-align: Center;
+	padding: 0px;
+	margin: 0px;
+}
+
 body {
 	background-image: url(Pildid/background.png);
 	background-size: cover;
