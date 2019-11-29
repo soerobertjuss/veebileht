@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Autoleht</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="opetused.css">
+<link rel="stylesheet" href="CSS/w3.css">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/opetused.css">
 </head>
 <body>
 	<h1 class = "pealkiri" ></h1>
@@ -48,59 +48,8 @@
   </div>
 </div>
 
-<script>
-<!--https://www.w3schools.com/w3css/w3css_slideshow.asp-->
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5500);    
-}
-
-// Script to open and close sidebar https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_food_blog&stacked=h
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+<script src="js/menu.js"></script>
+<script src="js/slideshow.js"></script>
 
 <!--Kuidagi normaalselt võiks need lingid eraldada üksteisest, mitte lihtsalt tühikutega // font võiks vist ka menüü jaoks
 teistsugune olla-->
