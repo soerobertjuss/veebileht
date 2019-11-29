@@ -1,0 +1,16 @@
+.pealkiri {
+	color: black;
+	font-size: 75px;
+	font-family: "Brush Script MT";
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-image: url("http://getwallpapers.com/wallpaper/full/7/c/8/112863.jpg");
+	font-family: "Bodoni MT";
+	color: black;
+	font-size: 20px;
+	text-align: left;
+	margin-top: 25px
+}
