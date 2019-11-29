@@ -2,21 +2,36 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Autoleht kasulikud lingid</title>
+	<title>Autoleht</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="kasulikudlingid.css">
+<link rel="stylesheet" href="opetused.css">
 </head>
-<style>
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-</style>
 <body>
-	<h1 class = "pealkiri" >Autoleht kasulikud lingid</h1>
-	<!-- kommentaar -->
-<div class="w3-content w3-display-container" style="max-height:1000px">
+	<h1 class = "pealkiri" ></h1>
+	
+	
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:15%" id="mySidebar">
+	<a href="javascript:void(0)" onclick="w3_close()"
+	class="w3-bar-item w3-button essa">Sulge menüü</a>
+	<a href="./baas.html" onclick="w3_close()" class="w3-bar-item w3-button"">Avaleht</a>
+	<a href="./uudised.html" onclick="w3_close()" class="w3-bar-item w3-button"">Uudised</a>
+	<a href="./opetused.html" onclick="w3_close()" class="w3-bar-item w3-button"">Õpetused</a>
+	<a href="./kasulikudlingid.html" onclick="w3_close()" class="w3-bar-item w3-button"">Kasulikud lingid</a>
+	<a href="./kusimeilt.html" onclick="w3_close()" class="w3-bar-item w3-button"">Küsi meilt!</a>
+</nav>
+
+<div class="w3-top">
+	<div class="w3-xlarge" style="max-width:1000px;margin:auto;padding-top:10px">
+	<div class="w3-button w3-left nupp" onclick="w3_open()">☰</div>
+    <div class="pealkiri">Õpetused</div>
+  </div>
+</div>
+
+
+<div class="w3-content w3-display-container" style="max-height:1000px;padding-top:100px">
   <img class="mySlides" src="pildid/slideshow1.png" style="width:100%">
   <img class="mySlides" src="pildid/slideshow2.png" style="width:100%">
   <img class="mySlides" src="pildid/slideshow3.png" style="width:100%">
@@ -56,15 +71,21 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
 </script>
 
 <!--Kuidagi normaalselt võiks need lingid eraldada üksteisest, mitte lihtsalt tühikutega // font võiks vist ka menüü jaoks
 teistsugune olla-->
 
-<h2 class = "menüü"><a href="./baas.html">Avaleht</a>     <a href="./uudised.html">Uudised</a>
-       <a href="./opetused.html">Õpetused</a>     <a href="./kasulikudlingid.html">Kasulikud lingid</a>
-       <a href="./kusimeilt.html">Küsi meilt!</a>
-</h2>
 
 
 </body>
