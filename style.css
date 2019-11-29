@@ -1,9 +1,9 @@
 .pealkiri {
 	color: black;
-	font-size: 75px;
+	font-size: 80px;
 	font-family: "Brush Script MT";
 	text-align: Center;
-	padding: 0px;
+	padding-right: 62px;
 	margin: 0px;
 }
 
@@ -15,7 +15,15 @@
 	padding: 0px;
 	margin: 0px;
 }
+.nupp {
+	font-size:45px;
+	padding-top:30px;
+	padding-bottom:20px;
+}
 
+.essa {
+	margin-top:0px;
+}
 body {
 	background-image: url(Pildid/background.png);
 	background-size: cover;
@@ -27,4 +35,9 @@ body {
 }
 img {
 	border-radius: 25px;
+}
+
+#nav {
+  opacity: 1;
+  cursor: pointer;
 }
