@@ -30,14 +30,11 @@ body {
 	font-family: "Bodoni MT";
 	color: black;
 	font-size: 20px;
-	text-align: left;
-	margin-top: 25px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;;
 }
 img {
 	border-radius: 25px;
-}
-
-#nav {
-  opacity: 1;
-  cursor: pointer;
 }
