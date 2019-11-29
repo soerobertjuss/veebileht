@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Autoleht</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
@@ -12,7 +13,7 @@
 
 	
 <!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:15%" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:15%;min-width:150px" id="mySidebar">
 	<a href="javascript:void(0)" onclick="w3_close()"
 	class="w3-bar-item w3-button essa">Sulge menüü</a>
 	<a href="./baas.html" onclick="w3_close()" class="w3-bar-item w3-button"">Avaleht</a>
@@ -30,18 +31,23 @@
 </div>
 
 <div class="w3-content w3-display-container" style="max-height:1000px;padding-top:100px">
-  <img class="mySlides" src="pildid/slideshow1.png" style="width:100%">
-  <img class="mySlides" src="pildid/slideshow2.png" style="width:100%">
-  <img class="mySlides" src="pildid/slideshow3.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="pildid/slideshow1.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="pildid/slideshow2.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="pildid/slideshow3.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="pildid/slideshow4.png" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="pildid/slideshow5.png" style="width:100%">
   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
   </div>
 </div>
 
+<a>Sellelt lehelt leiad erinevat informatsiooni kõige kohta, mis puudutab autosid.</a>
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -68,6 +74,21 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 8000);    
 }
 
 // Script to open and close sidebar
