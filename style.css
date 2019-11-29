@@ -7,11 +7,14 @@
 	margin: 0px;
 }
 body {
-	background-image: url(background.png);
-	background-color: rgb(243,243,243);
+	background-image: url(Pildid/background.png);
+	background-size: cover;
 	font-family: "Bodoni MT";
 	color: black;
 	font-size: 20px;
 	text-align: left;
 	margin-top: 25px
+}
+img {
+	border-radius: 25px;
 }
