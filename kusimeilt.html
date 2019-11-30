@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="form.css">
 </head>
 <body>
 <!-- Sidebar (hidden by default) -->
@@ -47,10 +48,18 @@
 <script src="js/menu.js"></script>
 <script src="js/slideshow.js"></script>
 
+<div class="container" style=margin-top:50px>
+  <form action="kusimeilt.html">
 
+    <input type="text" id="fname" name="firstname" placeholder="Sinu nimi.." style="width:322px">
+    <input type="mail" id="mail" name="mail" placeholder="E-mail.." style="width:322px">
+	<h1></h1>
+    <textarea id="subject" placeholder="Kirjuta midagi.." style="height:200px;width:650px"></textarea>
+	<h1></h1>
+    <input type="submit" value="Saada">
 
-<h3><a href="mailto:risto.voor01@gmail.com?subject=Tere,%20kiire%20küsimus%20seoses%20teie%20ehega!">
-Saadke meile e-kiri küsimuste korral.</a></h3>
+  </form>
+</div>
 
 
 </body>
