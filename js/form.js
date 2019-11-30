@@ -1,7 +1,7 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   background-color: (0, 0, 0, 0)
-  width: 500px; /* Full width */
+  width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
@@ -10,9 +10,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-#mail #fname {
-	width: 500px
-}
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #4CAF50;
